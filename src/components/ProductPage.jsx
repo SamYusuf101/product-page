@@ -56,10 +56,10 @@ const ProductPage = () => {
           transition={{ duration: 3.5 }}
         >
           <div>
-            <span className=" text-[hsl(26,100%,55%)] font-semibold font-Kumbh">
-              Sneaker Company
+            <span className=" text-[hsl(26,100%,55%)] font-semibold ">
+              SNEAKER COMPANY
             </span>
-            <h1 className="text-2xl font-bold ">
+            <h1 className="text-2xl font-bold  ">
               Fall Limited Edition Sneakers
             </h1>
           </div>
