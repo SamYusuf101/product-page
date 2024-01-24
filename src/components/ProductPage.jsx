@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { motion } from "framer-motion";
 
 const ProductPage = () => {
   const [images, setImages] = useState({
@@ -49,20 +50,29 @@ const ProductPage = () => {
       </div>
       {/* ABOUT */}
       <div className="flex flex-col gap-4 lg:w-2/4">
-        <div>
-          <span className=" text-[hsl(26,100%,55%)] font-semibold font-Kumbh">
-            Sneaker Company
-          </span>
-          <h1 className="text-2xl font-bold ">Nike Invincible 3</h1>
-        </div>
-        <p className="text-gray-700 font-Kumbh">
-          Con un'ammortizzazione incredibile per sostenerti in tutti i tuoi
-          chilometri, Invincible 3 offre un livello di comfort elevatissimo
-          sotto il piede per aiutarti a dare il massimo oggi, domani e oltre.
-          Questo modello incredibilmente elastico e sostenitivo, è pensato per
-          dare il massimo lungo il tuo percorso preferito e fare ritorno a casa
-          carico di energia, in attesa della prossima corsa.
-        </p>
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 3.5 }}
+        >
+          <div>
+            <span className=" text-[hsl(26,100%,55%)] font-semibold font-Kumbh">
+              Sneaker Company
+            </span>
+            <h1 className="text-2xl font-bold ">Nike Invincible 3</h1>
+          </div>
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 3.5 }}
+        >
+          <p className="text-gray-700 font-Kumbh">
+            These low-profile sneakers are your perfect casual wear companion.
+            Feauturing a durable rubber outer sole, they'll withstand everything
+            the weather can offer.
+          </p>
+        </motion.div>
         <div className="flex-row flex space-x-4 items-center">
           <h6 className="text-2xl ">$ 199.00</h6>
           <h6 className="text-1xl bg-[hsl(25,100%,94%)]  py-1 px-2 rounded-lg text-[hsl(26,100%,55%)]">
