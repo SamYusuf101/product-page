@@ -59,7 +59,9 @@ const ProductPage = () => {
             <span className=" text-[hsl(26,100%,55%)] font-semibold font-Kumbh">
               Sneaker Company
             </span>
-            <h1 className="text-2xl font-bold ">Nike Invincible 3</h1>
+            <h1 className="text-2xl font-bold ">
+              Fall Limited Edition Sneakers
+            </h1>
           </div>
         </motion.div>
         <motion.div
